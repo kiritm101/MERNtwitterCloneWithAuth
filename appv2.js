@@ -138,6 +138,6 @@ app.get("/logout", function (req, res) {
   req.logOut();
   res.redirect("/");
 });
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server started on Port 3000");
 });
